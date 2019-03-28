@@ -42,14 +42,22 @@ Android版CeVIOとおバイクの製作中に解決方法は判明したが、�
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.RubberDduckApp&hl=ja)
 
 #### RealTimeVRTrip
+３年生になったばかりの頃、友人を巻き込んで立ち上げたプロジェクト。
+完成すれば遠隔で旅行することができるようになる。  
 [OfficialSite](https://www.vrtrip.work)
   
 ### iOS
 #### CeVIOとおバイク！！
+初めてネイティブで作ったアプリ。
+Swiftの特殊な部分や、Unityほど手軽じゃない複数音源ファイルの制御などに戸惑いながらも作成したもの。
+基本的にはボイロとおバイクと機能は同じ。  
 [AppStore](https://itunes.apple.com/jp/app/cevioとおバイク/id1455108580?l=en&mt=8)
 
 ### Android
 #### ゆかりん筋トレタイマー
 初のネイティブAndroidアプリ。
-Androidアプリの練習として製作した。  
+Androidアプリの練習として製作した。
+初めて作成したためかなり時間がかかった。xmlのレイアウト編集にかなり時間を食われた。
+ボイスロイドの結月ゆかりがサポートしてくれる。  
+
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.voiroworkoutapp)
