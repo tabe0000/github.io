@@ -38,7 +38,7 @@ Unityを使っていることもあり立体音響を導入した。車に接続
 えもふりを導入したラバーダッキング用アプリ。
 えもふりを使用することにより、キャラクターが常に動く。また、話の途切れ目にNODボタン（頷きボタン）を押すことでボイスと、頷きモーションが再生される。
 
-Android版CeVIOとおバイクの製作中に解決方法は判明したが、それを実行するモチベが地に落ちた時に製作された。
+Android版CeVIOとおバイクの製作中に解決方法は判明したが、それを実行するモチベが地に落ちた時に製作された。  
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.RubberDduckApp&hl=ja)
 
 #### RealTimeVRTrip
@@ -51,5 +51,5 @@ Android版CeVIOとおバイクの製作中に解決方法は判明したが、�
 ### Android
 #### ゆかりん筋トレタイマー
 初のネイティブAndroidアプリ。
-Androidアプリの練習として製作した。
+Androidアプリの練習として製作した。  
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.voiroworkoutapp)
