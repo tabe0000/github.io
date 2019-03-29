@@ -12,15 +12,16 @@ ___
 
 またVR関連では友人と協力して、VRヘッドマウントディスプレイを被って遠隔でロボットを操作する「RealTime VR Trip」プロジェクトを進めています。
 
-**現在**は内輪で約５、６時間で作品を作り上げるハッカソンをしたり、モバイルアプリを作っています。今はUnity、iOS、Androidに触れ作品を作っています。また次は、React Nativeを用いたクロスプラットフォーム SNSアプリ開発をしてみたいなとか考えています。
+**現在**は内輪でテーマ発表から約５、６時間で作品を作り上げる超短時間ハッカソンをしたり、モバイルアプリを作っています。今はUnity、iOS、Androidに触れ作品を作っています。また次は、React Nativeを用いたクロスプラットフォーム SNSアプリ開発をしてみたいなとか考えています。
 また、ボイロとおバイク、CeVIOとおバイクにmapboxを導入してナビにしてみたいなと考えています。資金や版権の関係もあるので学生の僕がどこまでやれるのかわかりませんがチャレンジはするつもりです。他の人に先を越されたら悔しいですし。
   
 ## Portfolio
 ___
-### **Unity**
+### ***Unity***
 
 #### ボイロとおバイク！！
-  
+<img src = vobkkiTi.png width=100> <img src = vobyutTi.png width=100> <img src = vobPlay.png width = 100> <img src = vobASMR.png width=100>  
+
 初めて世に出したアプリ。
 基本的にはバイクに乗りながら使う。
 後ろに乗っているボイスロイドがいろんなことを喋ってくれる。
@@ -32,7 +33,8 @@ mapboxSDKを使ったナビ実装の関係もあり、そのうちネイティ�
 
 
 [AppStore](https://itunes.apple.com/jp/app/ボイロとおバイク/id1436279821?mt=8)  
-[GooglePlayStore](https://play.google.com/store/apps/details?id=com.tabe.MotorCycleWaifu&hl=ja)
+[GooglePlayStore](https://play.google.com/store/apps/details?id=com.tabe.MotorCycleWaifu&hl=ja)  
+[niconico](https://www.nicovideo.jp/watch/sm34374839)
 
   
 #### きりたんとラバーダッキング！！
@@ -46,6 +48,8 @@ Android版CeVIOとおバイクの製作中にハマり、モチベが地に落�
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.RubberDduckApp&hl=ja)
 
 #### RealTimeVRTrip
+<img src = robotgif.gif >  
+
 ３年生になったばかりの頃、友人を巻き込んで立ち上げたプロジェクト。
 自宅でVR機材を使うだけで遠隔旅行が可能になる。  
 ロボット本体は完成している。遠隔動作テストをしてみたところ動作した。  
@@ -61,7 +65,7 @@ Lenovo Explorer, Windows Mixied Realityの使用を予定
 
 自分が軽音楽部の部長であることを利用してアンプなどの器材がたくさん置いている部室で動画を撮ろうとしているとかしていないとか。
   
-### **iOS**
+### ***iOS***
 #### CeVIOとおバイク！！
 <img src = cobTitle.PNG width=100> <img src = cobSwitchChar.PNG width=100> <img src = cobUSB.PNG width=100>  
 初めてネイティブで作ったアプリ。
@@ -69,7 +73,7 @@ IAちゃんとおバイクすることができる。
 基本的にはボイロとおバイクと機能は同じ。  
 [AppStore](https://itunes.apple.com/jp/app/cevioとおバイク/id1455108580?l=en&mt=8)
 
-### **Android**
+### ***Android***
 #### ゆかりん筋トレタイマー
 <img src = yukari.png width=100>  
 
