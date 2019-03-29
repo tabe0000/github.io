@@ -62,7 +62,7 @@ Lenovo Explorer, Windows Mixied Realityの使用を予定
   
 ### iOS
 #### CeVIOとおバイク！！
-<img src = cobTitle.png width=100> <img src = cobSwitchChar.png width=100> <img src = cobUSB.png width=100>  
+<img src = cobTitle.PNG width=100> <img src = cobSwitchChar.PNG width=100> <img src = cobUSB.PNG width=100>  
 初めてネイティブで作ったアプリ。
 IAちゃんとおバイクすることができる。
 基本的にはボイロとおバイクと機能は同じ。  
