@@ -17,7 +17,7 @@ ___
   
 ## Portfolio
 ___
-### Unity
+### **Unity**
 
 #### ボイロとおバイク！！
   
@@ -42,6 +42,7 @@ mapboxSDKを使ったナビ実装の関係もあり、そのうちネイティ�
 えもふりを使用することにより、キャラクターが常に動く。また、話の途切れ目にNODボタン（頷きボタン）を押すことでボイスと、頷きモーションが再生される。
 
 Android版CeVIOとおバイクの製作中にハマり、モチベが地に落ちた時に製作された。  
+[AppStore](https://itunes.apple.com/us/app/きりたんとラバーダッキング/id1457658586)
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.RubberDduckApp&hl=ja)
 
 #### RealTimeVRTrip
@@ -49,7 +50,7 @@ Android版CeVIOとおバイクの製作中にハマり、モチベが地に落�
 自宅でVR機材を使うだけで遠隔旅行が可能になる。  
 ロボット本体は完成している。遠隔動作テストをしてみたところ動作した。  
 ロボット遠隔制御通信にはオンラインゲームエンジンのphotonを用いた。  
-あとは映像転送方法をどうするか検討中。
+あとは映像転送方法をどうするか検討中。  
 [OfficialSite](https://www.vrtrip.work)
 
 #### IAちゃんとセッション！！
@@ -60,7 +61,7 @@ Lenovo Explorer, Windows Mixied Realityの使用を予定
 
 自分が軽音楽部の部長であることを利用してアンプなどの器材がたくさん置いている部室で動画を撮ろうとしているとかしていないとか。
   
-### iOS
+### **iOS**
 #### CeVIOとおバイク！！
 <img src = cobTitle.PNG width=100> <img src = cobSwitchChar.PNG width=100> <img src = cobUSB.PNG width=100>  
 初めてネイティブで作ったアプリ。
@@ -68,8 +69,10 @@ IAちゃんとおバイクすることができる。
 基本的にはボイロとおバイクと機能は同じ。  
 [AppStore](https://itunes.apple.com/jp/app/cevioとおバイク/id1455108580?l=en&mt=8)
 
-### Android
+### **Android**
 #### ゆかりん筋トレタイマー
+<img src = yukari.png width=100>  
+
 初のネイティブAndroidアプリ。
 Androidアプリの練習として製作した。
 ボイスロイドの結月ゆかりがサポートしてくれる。  
