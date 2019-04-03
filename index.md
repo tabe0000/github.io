@@ -70,7 +70,7 @@ Lenovo Explorer, Windows Mixied Realityの使用を予定
 #### とっかかりToDo!!
 <img src = tokkakari_1.png width=100> <img src = tokkakari_2.png width=100>
  目の前のタスクに対してやる気がでない時に、そのタスクをこなすための最初の「とっかかり」をサポートする。  
-AdMobを初めて導入した作品でもある。  
+AdMobを初めて導入した作品でもある。    
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.theFirstToDoList)
 
 
