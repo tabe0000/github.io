@@ -44,7 +44,7 @@ mapboxSDKを使ったナビ実装の関係もあり、そのうちネイティ�
 えもふりを使用することにより、キャラクターが常に動く。また、話の途切れ目にNODボタン（頷きボタン）を押すことでボイスと、頷きモーションが再生される。
 
 Android版CeVIOとおバイクの製作中にハマり、モチベが地に落ちた時に製作された。  
-[AppStore](https://itunes.apple.com/us/app/きりたんとラバーダッキング/id1457658586)
+[AppStore](https://itunes.apple.com/us/app/きりたんとラバーダッキング/id1457658586)  
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.RubberDduckApp&hl=ja)
 
 #### RealTimeVRTrip
@@ -52,6 +52,7 @@ Android版CeVIOとおバイクの製作中にハマり、モチベが地に落�
 
 ３年生になったばかりの頃、友人を巻き込んで立ち上げたプロジェクト。
 自宅でVR機材を使うだけで遠隔旅行が可能になる。  
+基本のエンジンにはUnityを使用。
 ロボット本体は完成している。遠隔動作テストをしてみたところ動作した。  
 ロボット遠隔制御通信にはオンラインゲームエンジンのphotonを用いた。  
 あとは映像転送方法をどうするか検討中。  
