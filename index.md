@@ -58,6 +58,8 @@ Android版CeVIOとおバイクの製作中にハマり、モチベが地に落�
 あとは映像転送方法をどうするか検討中。  
 [OfficialSite](https://www.vrtrip.work)
 
+
+
 #### IAちゃんとセッション！！
 UnityとOpenPoseを使用して、ギターを弾くIAを現実世界に召喚して一緒にセッションできるようにするというもの。  
 次に出す予定のIAちゃんと！！（仮題）の練習として製作中。  
@@ -66,6 +68,15 @@ Lenovo Explorer, Windows Mixied Realityの使用を予定
 
 自分が軽音楽部の部長であることを利用してアンプなどの器材がたくさん置いている部室で動画を撮ろうとしているとかしていないとか。
   
+#### とっかかりToDo!!
+<img src = tokkakari_1.png width=100> <img src = tokkakari_2.png width=100>  
+ 目の前のタスクに対してやる気がでない時に、そのタスクをこなすための最初の「とっかかり」をサポートする。  
+AdMobを初めて導入した作品でもある。    
+[GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.theFirstToDoList)
+
+
+
+
 ### ***iOS***
 #### CeVIOとおバイク！！
 <img src = cobTitle.PNG width=100> <img src = cobSwitchChar.PNG width=100> <img src = cobUSB.PNG width=100>  
