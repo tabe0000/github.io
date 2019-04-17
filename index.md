@@ -95,7 +95,15 @@ Androidアプリの練習として製作した。
 
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.voiroworkoutapp)
 
+
+#### Android版CeVIOとおバイク！！
+<img src = cboAndroidTitle.png width=100>
+<img src = cbondroidPlay.png width=100>  
+
+Unity版ボイロとおバイクで不満だった、バックグラウンド動作機能の追加。  そして新規機能としてナビを搭載するためにネイティブ開発された。  
+Fragmentの理解をせずにActivityでほとんどの画面を作成するという愚行をなしたので次回ナビの実装時にリファクタリングをする予定でいる。  
+[GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.ceviobikeapp)
 ## Links
 ___
-[Twitter](https://twitter.com/tabe_unity)
+[Twitter](https://twitter.com/tabe_unity)  
 [github](https:/github.com/tabe0000)
