@@ -1,4 +1,5 @@
 <link　href="http://jasonm23.  github.  com/markdown-css-themes/markdark.  css" rel="stylesheet">
+<meta name="viewport" content="width=device-width">
 
 # たべ's Portfolio Site
 ## 自己紹介
@@ -28,7 +29,7 @@ ___
     * Unity
     * iOS (Swift)　モバイルアプリ開発
     * Android (Java)　モバイルアプリ開発
-* **現在習得中の技術, 製作中の制作物**
+* **現在習得中の技術, 製作中の作品**
     * Blenderによる人体アニメーション制作
     * ReactNativeによるターンバイターン式モバイルナビアプリ制作
     * Processingによる体験型3Dグラフィカルコンテンツ制作（学校のプロジェクトで使う可能性があるため）
