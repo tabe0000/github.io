@@ -122,6 +122,14 @@ Unity版ボイロとおバイクで不満だった, バックグラウンド動�
 Fragmentの理解をせずにActivityでほとんどの画面を作成するという愚行をなしたので次回ナビの実装時にリファクタリングをする予定でいる.    
 [GooglePlayStore](https://play.google.com/store/apps/details?id=jp.dip.tabe.ceviobikeapp)
 
+### ***Processing***
+#### 某有名ブラクラの再現
+<img src = HOME.png width=100> <img src = alreadyIdiot.png width=100>
+Processingの練習として作ってみました.  
+外部の写真を使わずに、すべてProcessingで書いて制作しました.  
+githubで公開しようと思ったのですが、このご時世何があるかわからないので公の場に作品そのものを置くことをやめることにしました.  
+こんなくだらない作品一つで怯えるなんてことがない世の中になってほしいものです.
+
 ### ***React Native***
 #### ボイロ　車角度警告アプリ（仮）
 ボイロが車の角度が危険な状態になったときに警告してくれるアプリ
