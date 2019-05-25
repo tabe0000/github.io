@@ -157,7 +157,7 @@ ___
 最近はSonicPiを用いたLiveCoadingにチャレンジ中です.  
 使えるようになったらProcesingと組み合わせて映像と音楽を使って遊びたいと考えております.
 
-**今後手を付けたいと思っているもの**
-    * HTML, CSS, JS　の基礎知識
-    * Rails, DjangoなどのWebフレームワーク
-    * Raspberry Pi, ArduinoとGoogle Homeを用いたIoTコンテンツ制作(そのままつくるのも面白くないのでIFTTTと連携させてキャラクターと同棲しているような感覚にしたいとか考えている)
+**今後手を付けたいと思っているもの**  
+* HTML, CSS, JS　の基礎知識  
+* Rails, DjangoなどのWebフレームワーク  
+* Raspberry Pi, ArduinoとGoogle Homeを用いたIoTコンテンツ制作(そのままつくるのも面白くないのでIFTTTと連携させてキャラクターと同棲しているような感覚にしたいとか考えている)  
