@@ -1,0 +1,192 @@
+header {
+    background-color: aliceblue;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+a:link {
+    color:  darkslategrey;
+}
+
+a:visited{
+    color:  darkslategrey;
+}
+
+nav {
+    background-color: dimgrey;
+    font-family: 'Kosugi Maru', sans-serif;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 30px;
+
+}
+
+nav ul{
+    margin: 5px;
+}
+
+nav a{
+    color: black;
+    text-decoration: underline;
+}
+
+.navTab {
+    margin: 20px;
+    letter-spacing: 10px;
+    color: black;
+    display: inline-block;
+}
+
+.navTab a:link{
+    color: black;
+}
+
+.navTab a:visited{
+    color: black;
+}
+
+.MainNav{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+.marker1{
+    background:linear-gradient(transparent 75%, #ffadad 75%);
+    font-weight:bold; 
+}
+
+.marker2{
+    background: linear-gradient(transparent 75%, #c1e0ff 75%);
+    font-weight: bold;
+}
+
+
+
+
+body{
+    background-image: url(../img/wallpaper.jpg);
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+
+/*ABOUT ME*/
+.aboutMe {
+    background-color: rgba(245, 245, 245, 0.4);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px
+}
+
+.icon {
+    border-radius: 125px;
+    box-shadow: 0 0 3px #afafaf;
+}
+
+.aboutMeText{
+    background-color: rgba(245, 245, 245, 0.85);
+    border: solid 3px rgba(200, 200, 200, 0.99);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+
+/*portforios*/
+.portforios{
+    padding: 80px;
+}
+
+.portforios  h2{
+    margin-top: 8px;
+}
+
+.platformNames {
+    margin-top: 200px;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 0.95);  
+}
+
+.GoToTop {
+    margin-top: 50px;
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(240, 240, 240, 0.86);  
+    text-align: left;
+}
+
+.container{
+    background-color: rgba(250, 250, 250, 0.75);
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.appImgs{
+    margin-top: 3px;
+    display: inline-block;      /* インラインブロック要素にする */
+    padding:  10px;             /* 余白指定 */
+    padding-bottom: 0px;
+    width: 300;
+    align-items: right;
+}
+
+.appDataList {
+    margin-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    line-height: 120%;
+}
+
+
+
+/*AboutPage*/
+.aboutMainContainer{
+    background-color: rgba(250, 250, 250, 0.80);
+    padding: 10px;
+    margin: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+.MyPolicy{
+    text-align: center;
+}
+
+.List{
+    line-height: 1.5em;
+}
+
+.PR{
+    line-height:1.3em;
+}
+
+footer{
+    background-color: rgba(250, 250, 250, 0.75);
+    margin: 20px;
+    padding: 5px;
+    padding-left: 25px;
+}
+
+
+
+
+
+
+

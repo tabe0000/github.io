@@ -1,517 +1,391 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>index.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
-<style>
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-body {
-	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
-	font-size: 14px;
-	padding: 0 12px;
-	line-height: 22px;
-	word-wrap: break-word;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	color: #4080D0;
-	text-decoration: none;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-h1 code,
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code {
-	font-size: inherit;
-	line-height: auto;
-}
-
-a:hover {
-	color: #4080D0;
-	text-decoration: underline;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left: 5px solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 14px;
-	line-height: 19px;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-.mac code {
-	font-size: 12px;
-	line-height: 18px;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-/** Theming */
-
-.vscode-light,
-.vscode-light pre code {
-	color: rgb(30, 30, 30);
-}
-
-.vscode-dark,
-.vscode-dark pre code {
-	color: #DDD;
-}
-
-.vscode-high-contrast,
-.vscode-high-contrast pre code {
-	color: white;
-}
-
-.vscode-light code {
-	color: #A31515;
-}
-
-.vscode-dark code {
-	color: #D7BA7D;
-}
-
-.vscode-light pre:not(.hljs),
-.vscode-light code > div {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre:not(.hljs),
-.vscode-dark code > div {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre:not(.hljs),
-.vscode-high-contrast code > div {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
-}
-
-.vscode-light blockquote,
-.vscode-dark blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.vscode-high-contrast blockquote {
-	background: transparent;
-	border-color: #fff;
-}
-</style>
-
-<style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
-}
-</style>
-
-<style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
-}
-
-</style>
-
-</head>
-<body>
-<link　href="http://jasonm23.  github.  com/markdown-css-themes/markdark.  css" rel="stylesheet">
-<meta name="viewport" content="width=device-width">
-<h1 id="%E3%81%9F%E3%81%B9s-portfolio-site">たべ's Portfolio Site</h1>
-<h2 id="about-me">About me</h2>
-<hr>
-<p>現在, 某工業高等専門学校４年生</p>
-<p></p>
-<p>将来はエンタメ系の仕事に付きたいとかふんわり考えている人です.</p>
-<p><strong>人に「すげぇ！！」と直感的に感じてもらえるものを創りたいと考えています</strong></p>
-<p>モバイルアプリを始め、BlenderとかProcessingとか割と何でも広く浅く触っている人です.<br>
-私自身に興味のある方はページ最下部に色々書いてあるのでそちらを御覧ください.</p>
-<h2 id="my-skills">My skills</h2>
-<hr>
-<ul>
-<li><strong>とりあえずなんとかできるもの</strong>
-<ul>
-<li>Unity</li>
-<li>iOS (Swift)　モバイルアプリ開発</li>
-<li>Android (Java)　モバイルアプリ開発</li>
-</ul>
-</li>
-<li><strong>現在習得中の技術, 製作中の作品</strong>
-<ul>
-<li>Blenderによる人体アニメーション制作</li>
-<li>ReactNativeによるターンバイターン式モバイルナビアプリ制作</li>
-<li>Processingによる体験型3Dグラフィカルコンテンツ制作（学校のプロジェクトで使う可能性があるため）</li>
-<li>回転式360度立体3Dオブジェクト投影ディスプレイ(ProcessingかUnityで出力する予定.   MMDキャラクターをリアルタイムに投影できるようにしたい)</li>
-<li>SonicPiを用いたLiveCoading</li>
-</ul>
-</li>
-</ul>
-<h2 id="portfolio">Portfolio</h2>
-<hr>
-<h3 id="unity"><em><strong>Unity</strong></em></h3>
-<h4 id="%E3%83%9C%E3%82%A4%E3%83%AD%E3%81%A8%E3%81%8A%E3%83%90%E3%82%A4%E3%82%AF%EF%BC%81%EF%BC%81">ボイロとおバイク！！</h4>
-<p><img src = vobkkiTi.png width=100> <img src = vobyutTi.png width=100> <img src = vobPlay.png width = 100> <img src = vobASMR.png width=100></p>
-<p>初めて世に出したアプリ.<br>
-基本的にはバイクに乗りながら使う.<br>
-後ろに乗っているボイスロイドがいろんなことを喋ってくれる.<br>
-バイクのキーのON/OFFと連動することができる.<br>
-Unityを使っていることもあり立体音響を導入した.  車に接続すればキャラクターが助手席, 後部座席, 膝の上にいるような感覚を楽しむことが可能.</p>
-<p>初めて作ったこともあり, アップデートをしていくにつれて保守性を考えるきっかけにもなった.</p>
-<p>一時期はボイロナビへアップデートしようと考えていたが, 運営のために課金要素が発生することを考慮してこれはこれのままアップデートをしてくことにした.  デザインがボロボロということもあり, 就活のときに提出するには少々気がひけるので一度デザインを学習して再開発する予定.</p>
-<p><a href="https://itunes.apple.com/jp/app/%E3%83%9C%E3%82%A4%E3%83%AD%E3%81%A8%E3%81%8A%E3%83%90%E3%82%A4%E3%82%AF/id1436279821?mt=8">AppStore</a><br>
-<a href="https://play.google.com/store/apps/details?id=com.tabe.MotorCycleWaifu&amp;hl=ja">GooglePlayStore</a><br>
-<a href="https://www.nicovideo.jp/watch/sm34374839">niconico</a></p>
-<h4 id="%E3%81%8D%E3%82%8A%E3%81%9F%E3%82%93%E3%81%A8%E3%83%A9%E3%83%90%E3%83%BC%E3%83%80%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%EF%BC%81%EF%BC%81">きりたんとラバーダッキング！！</h4>
-<p><img src = rbTitle.png width=100> <img src = rbStart.png width=100> <img src = rbPlay.png width=100></p>
-<p>えもふりを導入したラバーダッキング用アプリ.<br>
-えもふりを使用することにより, キャラクターが常に動く.  また, 話の途切れ目にNODボタン（頷きボタン）を押すことでボイスと, 頷きモーションが再生される.</p>
-<p>Android版CeVIOとおバイクの製作中にハマり, モチベが地に落ちた時に製作された.<br>
-<a href="https://itunes.apple.com/us/app/%E3%81%8D%E3%82%8A%E3%81%9F%E3%82%93%E3%81%A8%E3%83%A9%E3%83%90%E3%83%BC%E3%83%80%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0/id1457658586">AppStore</a><br>
-<a href="https://play.google.com/store/apps/details?id=jp.dip.tabe.RubberDduckApp&amp;hl=ja">GooglePlayStore</a></p>
-<h4 id="realtimevrtrip">RealTimeVRTrip</h4>
-<img src = robotgif.gif >  
-<p>３年生になったばかりの頃, 友人を巻き込んで立ち上げたプロジェクト.<br>
-自宅でVR機材を使うだけで遠隔旅行が可能になる.<br>
-基本のエンジンにはUnityを使用.<br>
-ロボット本体は完成している.  遠隔動作テストをしてみたところ動作した.<br>
-ロボット遠隔制御通信にはオンラインゲームエンジンのphotonを用いた.<br>
-あとは映像転送方法をどうするか検討中.</p>
-<h4 id="ia%E3%81%A1%E3%82%83%E3%82%93%E3%81%A8%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%81%EF%BC%81">IAちゃんとセッション！！</h4>
-<p>Unityを使用して, ギターを弾くIAを現実世界に召喚して一緒にセッションできるようにするというもの.<br>
-次に出す予定のIAちゃんと！！（仮題）の練習として製作中.<br>
-権利の関係でアプリはリリースせず, 動画公開のみの予定.</p>
-<p>自分が軽音楽部の部長であることを利用してアンプなどの器材がたくさん置いている部室で動画を撮ろうとしているとかしていないとか.</p>
-<h4 id="%E3%81%A8%E3%81%A3%E3%81%8B%E3%81%8B%E3%82%8Atodo">とっかかりToDo!!</h4>
-<p><img src = tokkakari_1.png width=100> <img src = tokkakari_2.png width=100><br>
-目の前のタスクに対してやる気がでない時に, そのタスクをこなすための最初の「とっかかり」をサポートする.<br>
-AdMobを初めて導入した作品でもある.<br>
-<a href="https://play.google.com/store/apps/details?id=jp.dip.tabe.theFirstToDoList">GooglePlayStore</a></p>
-<h3 id="ios"><em><strong>iOS</strong></em></h3>
-<h4 id="ios%E7%89%88cevio%E3%81%A8%E3%81%8A%E3%83%90%E3%82%A4%E3%82%AF%EF%BC%81%EF%BC%81">iOS版CeVIOとおバイク！！</h4>
-<p><img src = cobTitle.PNG width=100> <img src = cobSwitchChar.PNG width=100> <img src = cobUSB.PNG width=100><br>
-初めてネイティブで作ったアプリ.<br>
-IAちゃんとおバイクすることができる.<br>
-基本的にはボイロとおバイクと機能は同じ.<br>
-<a href="https://itunes.apple.com/jp/app/cevio%E3%81%A8%E3%81%8A%E3%83%90%E3%82%A4%E3%82%AF/id1455108580?l=en&amp;mt=8">AppStore</a></p>
-<h3 id="android"><em><strong>Android</strong></em></h3>
-<h4 id="%E3%82%86%E3%81%8B%E3%82%8A%E3%82%93%E7%AD%8B%E3%83%88%E3%83%AC%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC">ゆかりん筋トレタイマー</h4>
-<img src = yukari.png width=100>  
-<p>初のネイティブAndroidアプリ.<br>
-Androidアプリの練習として製作した.<br>
-ボイスロイドの結月ゆかりがサポートしてくれる.</p>
-<p><a href="https://play.google.com/store/apps/details?id=jp.dip.tabe.voiroworkoutapp">GooglePlayStore</a></p>
-<h4 id="android%E7%89%88cevio%E3%81%A8%E3%81%8A%E3%83%90%E3%82%A4%E3%82%AF%EF%BC%81%EF%BC%81">Android版CeVIOとおバイク！！</h4>
-<img src = cboAndroidTitle.png width=100>
-<img src = cbondroidPlay.png width=100>  
-<p>Unity版ボイロとおバイクで不満だった, バックグラウンド動作機能の追加.    そして新規機能としてナビを搭載するためにネイティブ開発された.<br>
-Fragmentの理解をせずにActivityでほとんどの画面を作成するという愚行をなしたので次回ナビの実装時にリファクタリングをする予定でいる.<br>
-<a href="https://play.google.com/store/apps/details?id=jp.dip.tabe.ceviobikeapp">GooglePlayStore</a></p>
-<h3 id="processing"><em><strong>Processing</strong></em></h3>
-<h4 id="%E6%9F%90%E6%9C%89%E5%90%8D%E3%83%96%E3%83%A9%E3%82%AF%E3%83%A9%E3%81%AE%E5%86%8D%E7%8F%BE">某有名ブラクラの再現</h4>
-<p><img src = HOME.png width=100> <img src = alreadyIdiot.png width=100><br>
-Processingの練習として作ってみました.<br>
-外部の写真を使わずに、すべてProcessingで書いて制作しました.<br>
-githubで公開しようと思ったのですが、このご時世何があるかわからないので公の場に作品そのものを置くことをやめることにしました.<br>
-こんなくだらない作品一つで怯えるなんてことがない世の中になって欲しいものです.</p>
-<h3 id="react-native"><em><strong>React Native</strong></em></h3>
-<h4 id="%E3%83%9C%E3%82%A4%E3%83%AD-%E8%BB%8A%E8%A7%92%E5%BA%A6%E8%AD%A6%E5%91%8A%E3%82%A2%E3%83%97%E3%83%AA%EF%BC%88%E4%BB%AE%EF%BC%89">ボイロ　車角度警告アプリ（仮）</h4>
-<p>ボイロが車の角度が危険な状態になったときに警告してくれるアプリ
-現在, ナビアプリ開発のためにReactNativeを学習している.  しかしはじめから本命アプリを作ると保守性から可読性からなにからダダ崩れしかねないので, コレを一度練習として作る予定</p>
-<h3 id="others"><em><strong>Others</strong></em></h3>
-<h4 id="%E5%9B%9E%E8%BB%A2%E5%BC%8F360%E5%BA%A6%E7%AB%8B%E4%BD%933d%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%8A%95%E5%BD%B1%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4">回転式360度立体3Dオブジェクト投影ディスプレイ</h4>
-<p>10 x 15ほどの鉄板を高速回転し、そこに上部からプロジェクターで投影する.  自分と友人の２人で開発中.<br>
-回転式なので360度フィギュアを見ているような感覚で見ることができる。MMDなどに対応させてキャラクターを出力したりしてみたい.  　　
-出力方法はUnityとOpenCVと考えていたがこの際, Processingでやるのも有りな気がしてきた.</p>
-<h2 id="links">Links</h2>
-<hr>
-<p><a href="https://twitter.com/tabe_unity">Twitter</a><br>
-<a href="https://github.com/tabe0000">github</a></p>
-<h2 id="profile">Profile</h2>
-<hr>
-<p>初めてプログラミングに触れたのは中学生の時, 友人に「なんかC言語ってのを使えばゲーム作れるらしいぜ！！」と言われたことがきっかけでした.<br>
-その後はニコニコ技術部の動画に触発されて, もともとものづくりが好きだったこともあり高専への入学を決意しました.<br>
-　
-高専への入学後は寮生活や部活動の関係もあってしばらく技術的なものに触ることはありませんでした.  しかし, ２年の終わりの春休みに「何かやりたいと思って高専へ入ったのに, これじゃあ何もできてない.  今から何かしないとやばい.  」と感じて本屋でUnityの本を見つけとりあえずやってみることにしました.</p>
-<p>それから数ヶ月後, とある思いつきで初めてのアプリとなる「きりたんとおバイク！！」（現在では「ボイロとおバイク」）をリリース.  様々な方の支援もあって初めてのリリースにも関わらず, 約半年で5000DLを突破.  そして, その後はMacを購入してSwiftを学習し, iOS向けアプリ「CeVIOとおバイク！！」をリリース.  その後も様々なアプリを開発, リリースしています.</p>
-<p><strong>現在</strong>は内輪でテーマ発表から約５, ６時間で作品を作り上げる超短時間ハッカソンをしたり, モバイルアプリを作っています.  今はUnity, iOS, Androidに触れ作品を作っています.<br>
-最近はSonicPiを用いたLiveCoadingにチャレンジ中です.<br>
-使えるようになったらProcesingと組み合わせて映像と音楽を使って遊びたいと考えております.</p>
-<p><strong>今後手を付けたいと思っているもの</strong></p>
-<ul>
-<li>HTML, CSS, JS　の基礎知識</li>
-<li>Rails, DjangoなどのWebフレームワーク</li>
-<li>Raspberry Pi, ArduinoとGoogle Homeを用いたIoTコンテンツ制作(そのままつくるのも面白くないのでIFTTTと連携させてキャラクターと同棲しているような感覚にしたいとか考えている)</li>
-</ul>
-
-</body>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Tabe's Portforio Site</title>
+        <link rel="stylesheet" href="css/styles.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Tabe's Portforio Site</h1>
+                <p>
+                    作品と自分についてまとめたサイト
+                </p>
+            </div>
+        </header>
+
+
+        <nav>
+            <ul>
+                <li class="navTab"> <a href="index.html" >MAIN</a> </li>
+                <li class="navTab"> <a href="about.html">ABOUT</a> </li>
+            </ul>
+        </nav>
+
+
+        <div class="MainNav">
+            <h1 > <span class="marker1">This is MAIN page!</span> </h1>
+        </div>
+        <main>
+            <div class="aboutMe">
+                <a href="https://twitter.com/tabe_unity" target="_blank"><img src="img/meImg.jpg" width="250" alt="自分のアイコン" class="icon"></a>     
+                <h1>
+                    たべ
+                </h1>
+                <p class="aboutMeText">
+                    現在, 某工業高等専門学校4年生 <br>
+                    将来はエンタメ系の仕事の仕事に就くか, 地方創生に携われたらと思っている人です <br>
+                    <br>
+                    <b>人に「すげぇ！！」と直感的に感じてもらえるものを作ることが好きです</b><br>
+                    <br>
+                    モバイルアプリを始め、Unity, Processing, Blenderと割と何でも浅く広く触っています<br>
+                    <br>
+                    <br>
+                    このページを見て私に興味を持った方は<br>
+                    ABOUTページも見てみてください<br>
+                </p>
+            </div>
+
+
+            <!-- ポートフォリオ-->
+            <div class="portforios">
+                <h1 class="platformNames">Unity Apps</h1>
+                <!-- ボイロとおバイク-->
+                <div class="container">
+                    <h1>ボイロとおバイク</h1>
+                    <h2>ボイスロイドとタンデムできるようにしたアプリ。</h2>
+                    <img src="img/voiroto1.png" width=200 alt="" class="appImgs">
+                    <img src="img/voiroto2.png" width=200 alt="" class="appImgs">
+                    <p class="appImgs">
+                        はじめて世に出したアプリ<br><br>
+                        同人アプリは伸びて50DLがいいところと言われる中1年足らずで6000DLを突破<br>
+                        バイクのキーと連動させることができる。車モードも搭載されている<br>
+                        3Dゲームエンジンで作成していることを利用して車と徒歩モードでは立体音響を利用することができる<br>
+                        今後はVuforiaを使ってARコンテンツの搭載と大幅なUI改善をしたいと考えている<br>
+                        <br>
+                        プログラミングの経験がごく浅いときに作成したので保守性が非常に悪い<br>
+                        ただ、それらを考慮しながら作らなくてはならないということを教えてくれたアプリでもある<br>
+                        <br>
+                        現在は、UIの大幅改善, 新規ボイス追加, 新規モード追加, ARコンテンツの追加をするべく一から作り直している<br>
+                        <br>
+                    </p>
+                    <h3>Data of this app</h3>
+                    <ul class="appDataList" >
+                        <li> Made With Unity</li>
+                        <li> Programing Language Used
+                            <ul>
+                                <li>
+                                    C#
+                                </li>
+                            </ul>
+                        </li>
+                        <li> Supported Platform 
+                            <ul>
+                                <li>Android</li>
+                                <li>iOS</li>
+                            </ul>
+                        </li>
+                        <li>Downloads
+                            <ul>
+                                <li>6000 over</li>
+                            </ul>
+                        </li>
+                        <li>Store Links
+                            <ul>
+                                <li>
+                                    <a href="https://itunes.apple.com/jp/app/%E3%81%8D%E3%82%8A%E3%81%9F%E3%82%93%E3%81%A8%E3%83%A9%E3%83%90%E3%83%BC%E3%83%80%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0/id1457658586" target="_blank">
+                                    AppStore</a>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.tabe.MotorCycleWaifu&hl=ja" target="_blank">
+                                    GooglePlayStore</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RealtimeVRTrip-->
+                <div class="container">
+                    <h1>RealtimeVRTrip</h1>
+                    <h2>VRゴーグルを使ってロボットを遠隔操作しながら旅行できるようにしたサービス</h2>
+                    <img src="img/robotgif.gif" width=400 alt="" class="appImgs">
+                    <p class="appImgs">
+                            ３年生になったばかりの頃, 友人を巻き込んで立ち上げたプロジェクト<br>
+                            自宅でVR機材を使うだけで遠隔旅行が可能になる<br>
+                            <br>
+                            ロボット本体は完成している. 遠隔動作テストをしてみたところ動作した<br>
+                            ロボット遠隔制御通信にはオンラインゲームエンジンのphotonを用いた<br>
+                            <br>
+                            もしかしたら、ロボットを中継機としてドローンを遠隔操作するものへと変わるかもしれない<br>
+                            あとは映像転送方法をどうするか検討中<br>
+                            <br>
+                    </p>
+                    <h3>Data of this app</h3>
+                    <ul class="appDataList" >
+                        <li> Made With Unity</li>
+                        <li> Programing Language Used
+                                <ul>
+                                    <li>
+                                        C#
+                                    </li>
+                                </ul>
+                            </li>
+                        <li> Supported Platform 
+                            <ul>
+                                <li>Windows</li>
+                                <li>iOS</li>
+                                <li>Android</li>
+                            </ul>
+                        </li>
+                        <li> Online Realtime Network Engine
+                            <ul>
+                                <li>
+                                    Photon
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- きりたんとラバーダッキング-->
+                <div class="container">
+                    <h1>きりたんとラバーダッキング</h1>
+                    <h2>きりたん相手にラバーダッキングできる</h2>
+                    <img src="img/rbTitle.png" width=200 class="appImgs">
+                    <img src="img/rbPlay.png" width=200 class="appImgs" alt="">
+                    <p class="appImgs">
+                            えもふりを導入したラバーダッキング用アプリ <br>
+                            えもふりを使用することにより, キャラクターが常に動く <br>
+                            また, 話の途切れ目にNODボタン（頷きボタン）を押すことでボイスと, 頷きモーションが再生される <br>
+                            <br>
+                            Android版CeVIOとおバイクの製作中にハマり, モチベが地に落ちた時に製作された <br>
+                            <br>
+                            自分でもラバーダッキングアプリとかで調べてみたが, <br>
+                            AppStoreでは正式な(?)ラバーダッキング用アプリはこれだけかもしれない <br>
+                            <br>
+                        </p>
+                    <h3>Data of this app</h3>
+                    <ul class="appDataList" >
+                        <li> Made With Unity</li>
+                        <li> Programing Language Used
+                                <ul>
+                                    <li>
+                                        C#
+                                    </li>
+                                </ul>
+                            </li>
+                        <li> Supported Platform 
+                            <ul>
+                                <li>Android</li>
+                                <li>iOS</li>
+                            </ul>
+                        </li>
+                        <li>Downloads
+                            <ul>
+                                <li>100 over</li>
+                            </ul>
+                        </li>
+                        <li>Store Links
+                            <ul>
+                                <li>
+                                    <a href="https://itunes.apple.com/us/app/%E3%81%8D%E3%82%8A%E3%81%9F%E3%82%93%E3%81%A8%E3%83%A9%E3%83%90%E3%83%BC%E3%83%80%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0/id1457658586" target="_blank">
+                                    AppStore</a>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=jp.dip.tabe.RubberDduckApp&hl=ja" target="_blank">
+                                    GooglePlayStore</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container">
+                    <h1>とっかかりToDo！</h1>
+                    <h2>ものごとの「とっかかり」をサポート</h2>
+                    <img src="img/tokkakari_1.png" width="200" class="appImgs" alt="">
+                    <img src="img/tokkakari_2.png" width="200" class="appImgs" alt="">
+                    <p class="appImgs">目の前のタスクに対してやる気がでない時に, そのタスクをこなすための最初の「とっかかり」をサポートする.
+                            <br>AdMobを初めて導入した作品でもある <br></p>
+                    <h3>Data of this app</h3>
+                    <ul class="appDataList" >
+                        <li> Made With Unity</li>
+                        <li> Programing Language Used
+                                <ul>
+                                    <li>
+                                        C#
+                                    </li>
+                                </ul>
+                            </li>
+                        <li> Supported Platform 
+                            <ul>
+                                <li>Android</li>
+                            </ul>
+                        </li>
+                        <li>Downloads
+                            <ul>
+                                <li>5 over</li>
+                            </ul>
+                        </li>
+                        <li>Store Link
+                            <ul>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=jp.dip.tabe.theFirstToDoList" target="_blank">
+                                    GooglePlayStore</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--iOS版CeVIOとおバイク-->
+                <h1 class="platformNames">Native iOS Apps</h1>
+                <div class="container">
+                    <h1>iOS版 CeVIOとおバイク</h1>
+                    <h2>ネイティブで作成したことで, バックグラウンド動作を可能にした</h2>
+                    <img src="img/cobTitle.png" width="200" class="appImgs" alt="">
+                    <img src="img/cobSwitchChar.png" width="200" class="appImgs" alt="">
+                    <img src="img/cobUSB.png" width="200" class="appImgs" alt="">
+                    <p class="appImgs"> 初めてネイティブで作ったアプリ<br>
+                            IAちゃんとおバイクすることができる<br>
+                            ネイティブのアプリ制作に興味があったのと、Twitterでの深夜テンションにより作成された<br>
+                            <br>
+                            ネイティブで作成したことにより要望の多かったバックグラウンド動作を可能にした<br>
+                            基本的にはボイロとおバイクと機能は同じ<br>
+                            <br>
+                            せっかくMacMiniがあるのでARkitを使ってなんか面白いことをしていきたい. <br>　</p>
+                    <h3>Data of this app</h3>
+                    <ul class="appDataList" >
+                        <li> Made With Xcode</li>
+                        <li> Programing Language Used
+                                <ul>
+                                    <li>
+                                        Swift
+                                    </li>
+                                </ul>
+                            </li>
+                        <li> Supported Platform 
+                            <ul>
+                                <li>iOS</li>
+                            </ul>
+                        </li>
+                        <li>Downloads
+                            <ul>
+                                <li>100 over</li>
+                            </ul>
+                        </li>
+                        <li>Store Link
+                            <ul>
+                                <li>
+                                    <a href="https://itunes.apple.com/jp/app/cevio%E3%81%A8%E3%81%8A%E3%83%90%E3%82%A4%E3%82%AF/id1455108580?l=en&mt=8" target="_blank">
+                                    AppStore</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <h1 class="platformNames">Native Android Apps</h1>
+                <!-- Android版CeVIOとおバイク-->
+                <div class="container">
+                    <h1>Android版CeVIOとおバイク</h1>
+                    <h2>ネイティブで作成。こちらもバックグラウンド動作が可能に。</h2>
+                    <img src="img/cboAndroidTitle.png" class="appImgs" width="200" alt="">
+                    <img src="img/cbondroidPlay.png" class="appImgs" width="200" alt="">
+                    <p class="appImgs"> Unity版ボイロとおバイクで不満だった, バックグラウンド動作機能の追加<br>
+                                        そして新規機能としてナビを搭載するためにネイティブ開発された<br>
+                                        <br>
+                                        Fragmentの理解をせずにActivityでほとんどの画面を作成するという愚行をなしたので<br>
+                                        次回ナビの実装時にリファクタリングをする予定でいる<br>　</p>
+                    <h3>Data of this app</h3>
+                    <ul class="appDataList" >
+                        <li> Made With Android Studio</li>
+                        <li> Programing Language Used
+                                <ul>
+                                    <li>
+                                        Java
+                                    </li>
+                                </ul>
+                            </li>
+                        <li> Supported Platform 
+                            <ul>
+                                <li>Android</li>
+                            </ul>
+                        </li>
+                        <li>Downloads
+                            <ul>
+                                <li>50 over</li>
+                            </ul>
+                        </li>
+                        <li>Store Link
+                            <ul>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=jp.dip.tabe.ceviobikeapp" target="_blank" >
+                                    GooglePlayStore</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <h1 class="platformNames">Processing Apps</h1>
+                <!-- 某有名ブラクラ-->
+                <div class="container">
+                    <h1>某有名ブラクラの再現</h1>
+                    <h2>某有名ブラクラのあの挙動を再現しました</h2>
+                    <img src="img/HOME.png" class="appImgs" width=200 alt="">
+                    <img src="img/alreadyIdiot.png" class="appImgs" width="200" alt="">
+                    <p class="appImgs"> 
+                        Processingの練習として作ってみた<br>
+                        画像を使用することなく, すべてコーディングして作成した<br>
+                        githubにて公開しようと思ったが, このご時世に何があるかわからないので取りやめた<br>
+                        <br>
+                    </p>
+                    <ul class="appDataList" >
+                            <li> Made With Processing</li>
+                            <li> Programing Language Used
+                                    <ul>
+                                        <li>
+                                            Java
+                                        </li>
+                                    </ul>
+                                </li>
+                            <li> Supported Platform 
+                                <ul>
+                                    <li>Windows, Mac, Linux, iOS, Android etc...</li>
+                                </ul>
+                            </li>
+                            <li>Link
+                                <ul>
+                                    <li>
+                                        Currently private
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+                <a href=""><h1 class="GoToTop" >Topへ↑</h1></a> 
+            </div>
+        </main>
+        
+
+        <footer>
+            <div class="ontactInfomation">
+                <h1>Contact infomation</h1>
+                <ul>
+                    <li>
+                        Twitter: <a href="https://twitter.com/tabe_unity" target="_blank" >@tabe_unity</a>
+                    </li>
+                    <li>
+                        mail: tabetabe.unity==☆==gmail.com <br>
+                        ==☆==を@に変えてから送信してください.
+
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
