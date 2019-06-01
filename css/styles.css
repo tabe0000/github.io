@@ -6,6 +6,10 @@ header {
     font-family: 'Kosugi Maru', sans-serif;
 }
 
+h1{
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
 p {
     font-size: 20px;
 }
@@ -71,8 +75,6 @@ nav a{
     background: linear-gradient(transparent 75%, #c1e0ff 75%);
     font-weight: bold;
 }
-
-
 
 
 body{
