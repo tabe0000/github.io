@@ -3,11 +3,11 @@ header {
     padding-top: 5px;
     padding-left: 20px;
     padding-bottom: 8px;
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1{
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 p {
@@ -24,7 +24,7 @@ a:visited{
 
 nav {
     background-color: dimgrey;
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     padding: 15px;
     margin-top: 5px;
     margin-bottom: 30px;
@@ -77,9 +77,11 @@ nav a{
 }
 
 
+
+
 body{
     background-image: url(../img/wallpaper.jpg);
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 
