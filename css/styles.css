@@ -166,7 +166,7 @@ body{
 .container h2{
     margin-top: 0px;
     margin-bottom: 20px;
-    text-decoration-line: overline;
+    text-decoration: underline;
     font-weight: 580;
 }
 
