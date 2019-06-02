@@ -160,12 +160,14 @@ body{
 .container h1{
     margin: 5px;
     margin-bottom: 0;
+    font-weight: lighter;
 }
 
 .container h2{
     margin-top: 0px;
     margin-bottom: 20px;
     text-decoration-line: overline;
+    font-weight: lighter;
 }
 
 .titleName{
